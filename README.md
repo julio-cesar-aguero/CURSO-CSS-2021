@@ -55,7 +55,11 @@ NIVEL AVANZADO
 
 
 
+Estado de CSS
 
+CSS(Cascade Style Sheets - Hojas de estilo en cascada)
+
+Lenguaje de diseño lo interpreta el navegador 
 
 
 
