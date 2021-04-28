@@ -1,0 +1,94 @@
+/**/
+
+/*
+        selectores simples
+            selectores elementales
+                Selector Universal -> *
+                Selector de tipo o etiqueta -> Nombre de la etiqueta
+            selectores de atributo
+                ID -> id del elemento
+                clase -> clase de elemento
+                otros atributos
+
+        Selectores Compuestos
+            selectores agrupados
+            selectores combinadores
+            Pseudoclases - Pseudoelementos
+*/
+/*
+Selectores universales
+*{
+    background-color: brown;
+}
+h1{
+    background-color: aquamarine;
+}
+p{
+    background-color: blue;
+}
+
+Selector de atributo
+
+-> ID
+
+existen pero no deben aplicarse debido a la reutilizacion de codigo
+#title {
+  background-color: blueviolet;
+}
+
+-> clase
+
+
+.title{
+    background-color: aquamarine;
+}
+.texto{
+    background-color: blue;
+}
+
+-> otros atributos
+[href]{
+    background-color: blue;
+}
+[href="https://www.google.com"]{
+    background-color: blue;
+}
+empieza con..
+[href*^=valor]{
+    background-color: blue;
+}
+
+contiene el siguiente valor
+[href*=valor]{
+    background-color: blue;
+}
+[href$=rojo]{
+    background-color: blue;
+}
+[lang|="en"]{
+
+}
+
+
+Selectores Compuestos
+
+-> Selectores Agrupados
+-> Selectores Combinadores
+-> Pseudoclases - Pseudoelementos
+
+Selectores Agrupados
+
+
+.texto,.texto2,.texto3,.texto4{
+    background-color: blue;
+}
+ Selectores Combinadores
+selector descendiente
+
+ 
+div .title2{
+     background-color: coral;
+ }
+*/
+
+
