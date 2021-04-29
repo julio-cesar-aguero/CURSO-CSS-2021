@@ -83,12 +83,41 @@ Selectores Agrupados
     background-color: blue;
 }
  Selectores Combinadores
-selector descendiente
+
+->  selector descendiente
 
  
 div .title2{
      background-color: coral;
  }
+
+ -> selector de hermano siguiente(+)
+ 
 */
+/*
+.title-2 + .div{
+    background-color: rgb(255, 127, 127);
+}
+
+-> selector de hermanos siguiente(~)
+
+ .title ~ [class*=t]{
+    background-color: rgba(204, 0, 0, 0.404);
+}
+-> selector de hijo directo( > )
+
+.div > p{
+    background-color: crimson;
+}
+*/
+
+
+
+
+
+
+
+
+
 
 
