@@ -70,22 +70,20 @@ body {
   color: rgb(0, 0, 0);
   margin: 0;
 }
-.header{
+.header {
   height: 200px;
   background-color: rgba(179, 66, 66, 0.582);
   margin-bottom: 80px;
-  position: sticky;
-  top: 0;
   text-align: center;
 }
-article{
+article {
   background-color: rgba(210, 105, 30, 0.521);
 }
 
-.menu{
-  
+.menu {
   background-color: aliceblue;
-  
+  position: sticky;
+  top: 0;
 }
 /*
 .container{
