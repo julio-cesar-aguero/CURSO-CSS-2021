@@ -73,11 +73,12 @@ body {
 .header {
   height: 200px;
   background-color: rgba(179, 66, 66, 0.582);
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   text-align: center;
 }
 article {
   background-color: rgba(210, 105, 30, 0.521);
+  
 }
 
 .menu {
@@ -85,22 +86,29 @@ article {
   position: sticky;
   top: 0;
 }
-/*
-.container{
-  width: 200px;
-  height: 200px;
-  background-color: peru;
-  position: absolute;
-}
+
+
 .box {
+  z-index: 0;
   width: 100px;
   height: 100px;
   text-align: center;
+  margin-bottom: -60px;
 }
-.box-1 {
+.box1 {
   background-color: brown;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.box2 {
+  background-color: rgb(206, 178, 52);
+  position: relative;
+  z-index: 1;
 }
 
-*/
+.box3 {
+  background-color: rgb(42, 136, 165);
+  z-index: 0;
+}
+
+
