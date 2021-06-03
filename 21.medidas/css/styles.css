@@ -1,0 +1,17 @@
+/*
+    La mas usuada es px(pixeles)
+
+    las medidas relativas SIEMPRE dependen de un contexto son las que se recomienda
+    utilizar en la gran mayoría de ocaciones porque nos van a permitir que todos los 
+    elementos escalen proporcionalmente.
+        ex -> Altura x de la fuente del elemento.
+        ch -> la medida del ancho del glifo"0" de la letra del elemento
+        lh -> altura de la linea del elemento
+    
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #420;
+}
