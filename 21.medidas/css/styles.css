@@ -1,17 +1,86 @@
 /*
     La mas usuada es px(pixeles)
-
+    
     las medidas relativas SIEMPRE dependen de un contexto son las que se recomienda
     utilizar en la gran mayoría de ocaciones porque nos van a permitir que todos los 
     elementos escalen proporcionalmente.
+    las más usadas son em, rem, %, vw, vh, vmin  vmax aunque tenemos otrás com:
         ex -> Altura x de la fuente del elemento.
         ch -> la medida del ancho del glifo"0" de la letra del elemento
         lh -> altura de la linea del elemento
-    
+        
+        rem -> Corresponde a la medida de la "m" de la raiz del documento (html).
+        
+        em -> Corresponde a la medida de la "m" del contexto donde nos encontremos
+
+        El estandar del tamaño de fuente por defecto en la raiz  del documento es 
+        16px, y NO ES RECOMENDABLE MODIFICARLO.
+
+        Nota: Tanto "em" como "rem" se calcula en base a la
+        propiedad font-size (tamaño de fuente)
+
+        % -> cuando usamos porcentaje usamos de referencía el tamaño del contenedor y el 
+        navegador calcula ese porcentaje. Esto no ocurre cuando usamos transform.
+
+        auto -> Cuando usamos auto le pedimos al navegador que calcule en funcion del espacio 
+        disponible.
+
+        HEIGHT:
+          % -> Cuando estamos dentro de un contenedor,
+          este tiene que tener un alto declarado, si no
+          no podra calcular el porcentaje. Si se le aplica
+          una medida con porcentaje se sustituira
+          automaticamente por auto.
+          
+          auto -> Cuando utilizamos auto el alto lo calculará
+          el navegador en base al contenido del elemento.
+
+
+        Nota: Height es una propiedad que tienes que usar con 
+        mucho cuidado. Si no es necesario establecer un alto,
+        dejar que el contenido sea el que decida el alto del 
+        elemento.
+
+        
+
+
+
+
 */
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #420;
+  background-color: #777;
+  margin: 0;
+}
+h1,h2{
+  display: block;
+  text-align: center;
+  margin: 1em;
+}
+.link{
+  display: inline-block;
+  width: 12em;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  color: #333;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 50px; 
+}
+.box{
+  margin-top: 100px;
+  margin: 0 50px;
+  width: auto;
+  background-color: lightgreen;
+  padding: 10px;
+}
+.box-children{
+  width: auto;
+  height: 100px;
+  margin-left: 50px;
+  background-color: lightseagreen;
 }
