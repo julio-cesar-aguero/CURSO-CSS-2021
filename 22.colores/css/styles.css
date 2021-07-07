@@ -1,0 +1,86 @@
+/*    
+    Colores
+        La mayoria de las pantallas funcionan con un modo de color
+        aditivo. La suma de RGB da como resultado un blanco
+        Tenemos varias formas de dar color en CSS.
+
+        Keywords -> Palabras clave que representan colores 
+        https://www.w3.org/wiki/CSS/Properties/color/keywords
+
+        Importante: recordar que existe el color transparente
+
+        RGB/RGBA 
+
+            En el modo RGB tenemos 3 canales (Red , Green , Blue) y
+            tenemos 8 bits de color por canal, (cada bit tiene dos
+            posibles valores 0 ó 1) lo que tenemos 2*8 
+            posibles valores que van desde 0 hasta 255.
+
+            Esto nos da un total de 255 * 255 * 255 = 16.581.375
+            colores.
+
+            Su sintaxis es rgb(R , G , B)
+
+            Si ponemos todos los canales a 0 tendremos negro puro
+            y si los ponemos a 255 tendremos blanco.
+
+            Para moverse por la gama de grises debemos poner 3 canales 
+            a 128 tendremos gris puro.
+
+            El modo RGB nos da la opción de utilizar un cuarto canal
+            que correspondería al canal alpha, es decir, la transparencía
+            y su valor que va desde 0 a 1. Tenemos dos sintaxis para utilizar 
+            el canal alpha 
+                
+                rgba(R,G,B,A)
+                rgba(R G B / A)
+            
+        Hexadecimal
+
+            La notación hexadecimal es la mas común en desarrollo web,
+            se basa en los mismos principios que el RGB pero escrito
+            en notación hexadecimal.
+            
+            El sistema hexadecimal  es un sistema basado en 16 valores
+            del 0 al 15
+            
+
+
+
+
+        */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+} 
+body{
+    background-color: teal;
+}
+.box{
+    display: inline-block;
+    margin: 0.5em;
+    
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.3);
+    border-radius: 20px;
+    background-color: chocolate;
+    /*border-left: 650px solid transparent;*/
+    /*border-right: 650px solid transparent;*/
+}
+
+.item-short{
+    width: 100px;
+    height: 100px;
+}
+.item-long{
+    width: 300px;
+    height: 300px;
+
+}
+.item-medium{
+    width: 200px;
+    height: 200px;
+
+}

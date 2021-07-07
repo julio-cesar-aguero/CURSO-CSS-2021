@@ -41,7 +41,27 @@
         dejar que el contenido sea el que decida el alto del 
         elemento.
 
-        
+        VIEWPORT:
+          El viewport es el área útil donde se mostrará la página
+          web. IMPORTANTE, tener en cuenta que es el área visible
+          sin hacer scroll.
+          Podemos usar el viewport como medída de varias formas:
+            vw -> Viewport Width, hace referencia al ancho del 
+            viewport.
+            vh -> Viewport Height, hace referencia al alto del 
+            viewport.
+            vmax -> Utiliza el valor más grande entre el ancho y
+            el alto del viewport.
+            vmin -> Utiliza el valor más pequeño entre el ancho y
+            el alto del viewport.
+
+            1vw = 1% del ancho del viewport
+            1vh = 1% del alto del viewport
+            1vmin = 1% del valor que sea más pequeño del viewport
+            1vmax = 1% del valor que sea más grande del viewport
+
+
+
 
 
 
@@ -49,17 +69,18 @@
 */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: #777;
-  margin: 0;
+  
 }
-h1,h2{
-  display: block;
+.header{
+  background-color: brown;
   text-align: center;
-  margin: 1em;
+  
 }
-.link{
+.link {
   display: inline-block;
   width: 12em;
   margin: 2rem;
@@ -69,18 +90,19 @@ h1,h2{
   color: #333;
   font-size: 1em;
   text-align: center;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
-.box{
+.box {
   margin-top: 100px;
-  margin: 0 50px;
-  width: auto;
+  width: 300px;
+  height: 300px;
   background-color: lightgreen;
-  padding: 10px;
 }
-.box-children{
-  width: auto;
-  height: 100px;
-  margin-left: 50px;
+.box-children {
+  position: sticky;
+  top: 0;
+  width: 100vmax;
+  
+  height: 150px;
   background-color: lightseagreen;
 }
