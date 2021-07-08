@@ -14,8 +14,20 @@
     Cuando usamos una propiedad text-* estamos afectando
     a un bloque completo
 
-    Cuando usamos una propiedad font-* afectando a un bloque
-    completo
+    Cuando usamos una propiedad font-* afectamos a la fuente
+    del texto.
+
+    Fuentes predeterminadas, son las fuentes que se consideran 
+    seguras ya que son genéricas y no establecen una familia
+    tipográfica, si no un estilo de fuente.
+        serif: fuentes que contienen serifas(adornos
+        en los caracteres)
+        sans:serif: Fuentes sin serifas
+        monospace: Fuentes que tienen el mismo
+        espaciado entre todos sus caracteres.
+        cursive: fuentes
+
+
 
     
     
@@ -23,6 +35,13 @@
 
 *{
     box-sizing: border-box;
+    }
+body{
     background-color: #333;
     color: antiquewhite;
+
+}
+.text{
+    font-family: Arial,sans-serif;
+
 }
