@@ -1,0 +1,28 @@
+/*
+    la tipografia es la ciencia que estudia
+    el diseño y uso de los tipos de letra
+
+    las fuentes son tipos específicos de letra
+
+    los glifos son cada uno de los dibujos
+    que representan cada símbolo de la fuente
+    incluidos los espacios.
+
+    Familia tipográfica, son las diferentes fuentes
+    que pertenecen a una misma base.
+
+    Cuando usamos una propiedad text-* estamos afectando
+    a un bloque completo
+
+    Cuando usamos una propiedad font-* afectando a un bloque
+    completo
+
+    
+    
+*/
+
+*{
+    box-sizing: border-box;
+    background-color: #333;
+    color: antiquewhite;
+}
