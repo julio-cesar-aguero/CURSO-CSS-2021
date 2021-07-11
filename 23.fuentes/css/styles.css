@@ -26,8 +26,40 @@
         monospace: Fuentes que tienen el mismo
         espaciado entre todos sus caracteres.
         cursive: fuentes
+        
+        Fuentes desde un servidor remoto, son las
+        fuentes que se encuentran en un servidor remoto
+        y que nosotros descargamos para su uso, la más 
+        famosa es Google fonts
+
+        Siempre que utilicemos fuentes no genéricas, debemos
+        poner fuentes genéricas de fallback(respaldo)
+
+        Google Icons
+            
+            Material Icons
+
+                https://fonts.googleapis.com/css?family=Material+Icons
 
 
+                https://fonts.googleapis.com/css?family=Material+Icons
+                +Outlined
+
+
+                https://fonts.googleapis.com/css?family=Material+Icons
+                +Two+Tone
+
+
+                https://fonts.googleapis.com/css?family=Material+Icons
+                +Round
+
+                https://fonts.googleapis.com/css?family=Material+Icons
+                +Sharp
+
+            Nota: Si vas a usar una gran cantidad de iconos en tu web
+            compensa usar la libreria remota
+            Si sólo usarás unos pocos es mejor descargarlos en formato
+            svg y utilizarlos como imágenes
 
     
     
@@ -37,11 +69,14 @@
     box-sizing: border-box;
     }
 body{
-    background-color: #333;
-    color: antiquewhite;
-
+    background-color: #333333;
+    color: #722222;
+    font-weight: 400;
 }
 .text{
-    font-family: Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
 
+}
+.icon{
+    font-size: 5rem;
 }
